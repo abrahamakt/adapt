@@ -1,2 +1,2 @@
 # adapt
-task manager repository
+food booking repository
