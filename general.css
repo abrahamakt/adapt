@@ -11,12 +11,24 @@
 }
 
 body{
-    background-image: url("gradients/Colors Of Sky.jpg");
+    background-image: url("bg2.jpg");
     background-size: cover;
     background-repeat: no repeat;
     background-attachment: local;
     height: calc(100vh - 80px);
+    /*animation-name: backgroundImageChange;
+    animation-duration: 30s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;*/
 }
+
+/*@keyframes backgroundImageChange {
+    0% {background-image: url('bg2.jpg');}
+    25% {background-image: url('bg3.jpg');}
+    50% {background-image: url('bg4.jpg');}
+    70% {background-image: url('bg5.jpg');}
+    100% {background-image: url('bg6.jpeg');}
+}*/
 
 /*navigation bar css begins*/
 nav{
@@ -26,7 +38,7 @@ nav{
 } 
 
 .logo{
-    color: gray;
+    color: rgb(227, 27, 27);
     font-size:40px;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
@@ -156,6 +168,11 @@ a.signup{
     }
 
     ul{
+        background-color: gray;
+        z-index: 1;
+        border-radius: 5px;
+        padding: auto;
+        margin: auto;
         position: fixed;
         width: 100%;
         height: 100vh;
