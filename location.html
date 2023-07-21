@@ -11,7 +11,7 @@
           crossorigin="anonymous"
         ></script>
 </head>
-<body>
+<body style="text-align: center;">
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -35,12 +35,17 @@
               </ul>
             </nav>
           <!--navigation end-->
-    <select name="" id="region">
-        <option>Select Region</option>
-    </select>
-    <br>
-    <select name="" id="town"></select>
-
+          <div class="wrapper">
+            <div class="title">
+                Select Your Location
+            </div>
+        <select name="" id="region">
+            <option>Select Region</option>
+        </select>
+        <br>
+        <select name="" id="town"></select>
+        <button class="butn">Next</button>
+        </div>
 <script src="location.js"></script>
 <footer>Copyright &copy; 2023 adapt</footer>
 
