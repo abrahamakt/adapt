@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta name="keywords" content="bookfood food order food mealbooking meals"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="general.css" />
+        <!--Awesome Font kit code-->
+        <script
+          src="https://kit.fontawesome.com/73c202f83e.js"
+          crossorigin="anonymous"
+        ></script>
+        <title>Order Confirmed</title>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <a href="landingpage.html">
+      <label class="logo">book-meal</label>
+   </a>
+
+          <ul>
+            <li>
+              <a class="basket" href="#"
+                ><i class="fa-solid fa-basket-shopping"></i> list</a>
+              </li>
+
+            <li>
+              <a class="user" href="profile.html"
+              ><i class="fa-solid fa-user"></i> Account</a>
+            </li>
+
+          </ul>
+        </nav>
+      <!--navigation end-->
+      
+      <div style="text-align: center;" class="location">
+        <div>
+          <video autoplay><source src="ordercheck.mp4" type="video/mp4"></video>
+        </div>
+        <div><h1>Order Confirmed</h1></div>
+        <div class="order-details">
+          <p class="order_no">Order #: <span id="order_num">456142</span></p>
+          <p>Order Summary: <span id="summary"></span></p>
+          <p>Name on Order: <span id="name"></span></p>
+          <p>Phone: <span id=""></span></p>
+          <button class="butn" id="print" onclick="window.print()">Print</button>
+      </div>
+    </div>
+    <footer><div>Copyright &copy; 2023 <a href="#">adapt</a></div></footer>
+</body>
+</html>

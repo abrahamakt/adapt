@@ -10,6 +10,7 @@
           src="https://kit.fontawesome.com/73c202f83e.js"
           crossorigin="anonymous"
         ></script>
+        <title>User Profile</title>
 </head>
 <body style="text-align: center;">
     <nav>
@@ -22,11 +23,47 @@
        </a>
     </nav>
           <!--navigation end-->
-    <section>
-        <img src="notme.jpg" alt="" class="userphoto">
-    </section>
-    <section>
-    </section>
-    <footer>Copyright &copy; 2023 adapt</footer>
-</body>
+          <div class="profile">
+            <h1>Profile</h1>
+            
+            <div class="info">
+              <img src="notme.jpg" alt="" class="userphoto">
+            </div>
+            
+            <div class="info">
+              <label for="name">Name</label>
+              <input type="text" value="" id="name" readonly>
+            </div>
+            
+            <div class="info">
+              <label for="reference-id">Ref. ID</label>
+              <input type="text" value="" id="reference-id" readonly>
+            </div>
+
+            <div class="info">
+              <label for="college">College</label>
+              <input type="text" value="" id="college" readonly>
+            </div>
+            <div class="info">
+              <label for="faculty">Faculty</label>
+              <input type="text" value="" id="faculty" readonly>
+            </div>
+            <div class="info">
+              <label for="department">Department</label>
+              <input type="text" value="" id="department" readonly>
+            </div>
+
+            <div class="info">
+              <label for="phone">Phone</label>
+              <input type="tel" value="" id="phone" readonly>
+            </div>
+
+            <div class="info">
+              <label for="email">Email</label>
+              <input type="text" value="" id="email" readonly>
+            </div>
+              <button id="signout" class="signout">Sign Out</button>
+          </div>
+          <footer style="position: relative;"><div>Copyright &copy; 2023 <a href="#">adapt</a></div></footer>
+        </body>
 </html>
