@@ -1,47 +1,69 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="keywords" content="bookfood food order food mealbooking meals"/>
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="general.css" />
-    
-        <!--Awesome Font kit code-->
-        <script
-          src="https://kit.fontawesome.com/73c202f83e.js"
-          crossorigin="anonymous"
-        ></script>
-    
-        <title>Login</title>
-      </head>
-      
-      <!--body section begin-->
-      <body>
-    <nav><a href="landingpage.html">
-        <label class="logo">book-meal</label>
-     </a>
-    </nav>
-          
-    <div class="wrapper">
-        <div class="title">
-            Login Here
-        </div>
-
-<div class="form">
-        <div class="input_field">
-            <input type="text" placeholder="email" class="input">
-            <i class="fa-solid fa-envelope"></i>
-        </div>
-        <div class="input_field">
-            <input type="password" placeholder="password" class="input">
-            <i class="fa-solid fa-lock"></i>
-        </div>
-        <div style="text-align: center;">
-            <button id="login" class="btn"><a href="#">login</a></button>
-        </div>
-        <span style="font-size: 10pt;">Don't have an account? <a href="usersignup.html">sign up here</a></span>
-    </div>
+<head>
+<meta charset="UTF-8" />
+<meta name="keywords" content="bookfood food order food mealbooking meals" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="general.css" />
+<!--Awesome Font kit code-->
+<script
+src="https://kit.fontawesome.com/73c202f83e.js"
+crossorigin="anonymous"
+></script>
+<title>Login</title>
+</head>
+<body>
+<nav>
+<a href="landingpage.html">
+<label class="logo">book-meal</label>
+</a>
+</nav>
+<div class="wrapper">
+<div class="title">
+Login Here
 </div>
-<footer><div>Copyright &copy; 2023 <a href="#">adapt</a></div></footer>
-    </body>
+<div class="form">
+<div class="input_field">
+<input type="text" placeholder="email" class="input" id="emailInput">
+<i class="fa-solid fa-envelope"></i>
+</div>
+<div class="input_field">
+<input type="password" placeholder="password" class="input" id="passwordInput">
+<i class="fa-solid fa-lock"></i>
+</div>
+<div style="text-align: center;">
+<button id="login" class="btn"><a href="#">login</a></button>
+</div>
+<span style="font-size: 10pt;">Don't have an account? <a href="usersignup.html">sign up
+here</a></span>
+</div>
+</div>
+<script>
+document.getElementById('login').addEventListener('click', function (event) {
+event.preventDefault(); // Prevent the default behavior of the link
+const emailInput = document.getElementById('emailInput');
+const passwordInput = document.getElementById('passwordInput');
+// Trim the input to remove leading and trailing spaces
+const email = emailInput.value.trim();
+const password = passwordInput.value.trim();
+// Regular expression for email validation
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// Perform validation
+if (email === '' || password === '') {
+alert('Please enter both email and password to login.');
+} else if (!emailRegex.test(email)) {
+alert('Please enter a valid email address.');
+} else if (password.length < 8) {
+alert('Password should be at least 8 characters long.');
+} else {
+// Here, you can proceed with the login logic
+// For example, submit the form or
+console.log('Login successful');
+}
+});
+</script>
+<footer>
+<div>Copyright &copy; 2023 <a href="#">adapt</a></div>
+</footer>
+</body>
 </html>
